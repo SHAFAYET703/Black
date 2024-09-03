@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(badroom.jpg);
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+    font-family: 'Times New Roman', serif;
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+    padding: 32px;
+}
+
+header h1 {
+    color: white;
+    font-size: 50px;
+}
+
+header form {
+    margin-top: 20px;
+}
+
+header .search-input {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    border: none;
+    outline: none;
+}
+
+header .search-button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header .search-button:hover {
+    background-color: #ddd;
+}
+
+header .main ul {
+    list-style: none;
+    padding: 0;
+}
+
+header .main ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+    color: bisque;
+    background-color: rgba(255,255,255,0.2);
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.content h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.content .btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: aqua;
+    color: #333;
+    font-weight: bold;
+}
+
+@media(max-width: 760px) {
+    .content {
+        width: 90%;
+    }
+    .content h2 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 480px) {
+    .content {
+        width: 100%;
+    }
+    .content h2 {
+        font-size: 22px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+}
